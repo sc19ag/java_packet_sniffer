@@ -26,10 +26,14 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'java_packet_sniffer.App'
+    mainClass = 'java_packet_sniffer.Main'
 }
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
 }

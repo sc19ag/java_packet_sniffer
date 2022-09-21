@@ -6,6 +6,8 @@ package java_packet_sniffer;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("I am running!");
+        UserInterface ui = new UserInterface();
+        ui.printWelcomeMessage();
+        ui.doMainMenu();
     }
 }
